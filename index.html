@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Academy</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.svg">
+  <link rel="stylesheet" href="bootstrap.css">
+  
+  <!-- Подключение стилей Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Montserrat";
+      background-color: #F6F7F9;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <div class="d-flex navbar-nav-new justify-content-between" style="padding: 5px 10px; height: 60px;">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-dark.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- hidden nav -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo-light.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+            </a>
+            <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+              <img src="images/burger-close-light.svg" alt="cross" style="width: 100%; height: 100%; object-fit: contain;">
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="programs.html">
+                    <img src="images/all-courses.svg" alt="menu">
+                    <div>Все курсы</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Мероприятия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Базы знаний</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="career.html">Карьера</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="location.html">
+                  <img src="images/location.svg" alt="location">
+                  <div>Контакты</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">8 800 950-33-98 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="registration.html" target="_parent">
+                  <img src="images/person.svg" alt="person">
+                  <div>Войти</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- nav -->
+        <div class="collapse navbar-collapse nav-custom" id="navbarNav">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-dark.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </a>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="programs.html">
+                <img src="images/all-courses.svg" alt="menu">
+                <div>Все курсы</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Мероприятия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Базы знаний</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="career.html">Карьера</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="location.html">
+                <img src="images/location.svg" alt="location">
+                <div>Контакты</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">8 800 950-33-98 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="registration.html" target="_blank">
+                <img src="images/person.svg" alt="person">
+                <div>Войти</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- main -->
+      <div class="w-100 p-0 d-flex main-container">
+        <div class="container-fluid p-0 w-50 d-flex align-items-center justify-content-end" style="background-color: #00093C; color: #fff;">
+          <div class="d-flex flex-column text-main-container" style="margin-right: 4rem;">
+            <div class="fw-bold fs-36 mb-4">Образовательная платформа</div>
+            <div class="fw-bold fs-36 mb-5">ХОД Future Academy</div>
+            <div class="fw-medium fs-5">Актуальные знания для новичков и профессионалов</div>
+          </div>
+        </div>
+        <div class="container-fluid p-0 w-50">
+          <img src="images/main-woman.png" alt="woman with laptop" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </div>
+    <!-- image -->
+    <div class="container mt-140" style=" padding: 0 40px;">
+      <img src="images/vr.png" class="show-before-phone" alt="vr" style="width: 100%; height: 100%; object-fit: cover;">
+      <img src="images/vr2.png" class="hidden" alt="vr" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <!-- gradient-text info -->
+    <div class="container about-us-container mt-140">
+      <div class="text-center fw-bold fs-4" style="line-height: 34px; margin-bottom: 42px;">Актуальные знания от признанных экспертов рынка для новичков и практикующих специалистов.</div>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex flex-column">
+          <div class="fw-semibold fs-86 d-inline-block ps-2" style="color: #F6F7F9; background: linear-gradient(90deg, #F7941D 17%, #27AAE1 43%); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-stroke: 8px transparent; line-height: 104.83px; letter-spacing: 0.095em;">600</div>
+          <div class="fw-medium fs-20">Курсов</div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="fw-semibold fs-86 d-inline-block ps-2" style="color: #F6F7F9; background: linear-gradient(90deg, #F7941D 17%, #27AAE1 43%); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-stroke: 8px transparent; line-height: 104.83px; letter-spacing: 0.095em;">82</div>
+          <div class="fw-medium fs-20" style="width: min-content;">Ведущих преподавателей</div>
+        </div>
+        <div class="d-flex flex-column">
+          <div class="fw-semibold fs-86 d-inline-block ps-2" style="color: #F6F7F9; background: linear-gradient(90deg, #F7941D 17%, #27AAE1 43%); background-size: 200% 200%; -webkit-background-clip: text; -webkit-text-stroke: 8px transparent; line-height: 104.83px; letter-spacing: 0.095em;">14 795</div>
+          <div class="fw-medium fs-20">Выпускников</div>
+        </div>
+      </div>
+    </div>
+    <!-- grid -->
+    <div class="container d-flex flex-column gap-20 grid-container mt-140">
+      <div class="row box-gradient">
+        <div class="col d-flex justify-content-between align-items-center orange-grid-text-container" style="background-color: #F7BC75; border-radius: 20px; padding: 20px 40px;">
+          <div class="d-flex flex-column gap-2">
+            <div class="fs-86 fw-bold" style="line-height: 70px;">25</div>
+            <div class="fs-3" style="line-height: 33px;">ноября</div>
+          </div>
+          <div class="d-flex flex-column">
+            <div class="fs-36 fw-medium">День открытых дверей</div>
+            <div class="fs-18" style="max-width: 540px;">Приглашаем всех желающих на бесплатную экскурсию в мир востребованных профессий и полезных навыков</div>
+          </div>
+          <a href="registration.html" target="_blank" class="btn btn-custom d-inline-block fw-medium fs-14">Записаться</a>
+        </div>
+      </div>
+      <div class="row gap-20" style="min-height: 460px;">
+        <div class="col p-0 d-flex box-gradient" style="background-color: #C5DDFF; border-radius: 20px;">
+          <div class="d-flex flex-column align-items-center mx-auto my-auto gap-5 blue-grid-text-container" style="max-width: 400px;">
+            <div>
+              <img src="images/monitor.svg" alt="monitor">
+            </div>
+            <div class="fs-4 fw-medium">Программы обучения</div>
+            <div class="text-center fs-6" style="line-height: 24px;">В списке наших курсов вы сможете найти профессию и занятие по душе, изучить новое и получить практические знания, которые помогут получить работу мечты.</div>
+            <a href="programs.html" target="_blank" class="btn btn-custom d-inline-block fw-medium fs-14">Подробнее</a>
+          </div>
+        </div>
+        <div class="col flex-column p-0">
+          <div class="row gap-20">
+            <div class="col p-0 d-flex flex-column box-gradient" style="background-color: #B8EFCF; border-radius: 20px; min-height: 220px;">
+              <div class="d-flex flex-column align-items-center mx-auto my-auto gap-20">
+                <div>
+                  <img src="images/newspaper.svg" alt="newspaper">
+                </div>
+                <div class="fs-4 fw-medium text-center">Новости Академии</div>
+              </div>
+            </div>
+            <div class="col p-0 d-flex flex-column box-gradient" style="background-color: #FFEEF6; border-radius: 20px; min-height: 220px;">
+              <div class="d-flex flex-column align-items-center mx-auto my-auto" style="gap: 50px;">
+                <div>
+                  <img src="images/diagram.svg" alt="diagram">
+                </div>
+                <div class="fs-4 fw-medium">Мир IT</div>
+              </div>
+            </div>
+          </div>
+          <div class="row box-gradient" style="margin-top: 20px;">
+            <div class="col p-0 d-flex" style="background-color: #FFE38E; border-radius: 20px; min-height: 230px;">
+              <div class="d-flex align-items-center mx-auto my-auto gap-5">
+                <div class="image-try">
+                  <img src="images/try.svg" alt="try">
+                  <div class="fs-4 fw-medium text-center hidden">Попробуй!</div>
+                </div>
+                <div class="d-flex flex-column yellow-grid-text-container" style="max-width: 229px;">
+                  <div class="fs-4 fw-medium text-center show-before-phone">Попробуй!</div>
+                  <div class="text-center fs-6" style="line-height: 24px;">Пройдите тест и узнайте свои способности в сфере информационных технологий</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- carousel -->
+    <div class="p-0 container-fluid d-flex flex-column mt-140" style="background-color: #00093C;">
+      <div class="text-center fs-36 fw-bold mt-5 mb-5" style="color: #fff;">Отзывы наших студентов</div>
+      <div class="carousel-container">
+        <div class="owl-carousel owl-theme custom-carousel">
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel1.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel2.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel3.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel4.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat!</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel5.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="d-flex flex-column w-100 h-100">
+              <div class="d-flex">
+                <div class="me-2">
+                  <img src="images/carousel6.svg"alt="icon">
+                </div>
+                <div class="d-flex flex-column">
+                  <div class="fw-bold fs-14">Имя Фамилия</div>
+                  <div class="fs-12 fw-medium mb-3 mt-1">Студент курса «WEB-разработчик»</div>
+                </div>
+              </div>
+              <div class="fs-14 fw-medium mb-4" style="line-height: 22px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</div>
+              <div class="d-flex">
+                <div>
+                  <img src="images/star.svg" alt="star">
+                </div>
+                <div class="fs-14 fw-medium" style="line-height: 22px; color: #4F4F4F;">4,87 / 5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-progress d-flex flex-column mx-auto">
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <div class="d-flex align-items-center mx-auto mb-4" style="cursor: pointer;">
+            <button class="carousel-prev me-4">
+              <img src="images/arrow-left.svg" alt="arrow-left">
+            </button>
+            <button class="carousel-next">
+              <img src="images/arrow-right.svg" alt="arrow-right">
+            </button>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- welcome section -->
+    <div class="container mt-140 welcome-container">
+      <div class="text-center fw-bold fs-36 mb-5">Добро пожаловать в Академию будущего ХОД</div>
+      <div class="row gap-20 d-flex flex-column flex-md-row">
+        <div class="d-flex col">
+          <div class="col-6 col-md d-flex flex-column justify-content-between" style="min-height: 173px;">
+            <div>
+              <img src="images/welc1.svg" alt="scheme">
+            </div>
+            <div class="fs-18 fw-medium" style="min-height: 80px;">Передовой подход к образовательному процессу</div>
+          </div>
+          <div class="col-6 col-md d-flex flex-column justify-content-between">
+            <div>
+              <img src="images/welc2.svg" alt="book">
+            </div>
+            <div class="fs-18 fw-medium" style="min-height: 80px;">Непрерывное усовершенствование и пополнение базы курсов</div>
+          </div>
+        </div>
+        <div class="d-flex col">
+          <div class="col-6 col-md d-flex flex-column justify-content-between">
+            <div>
+              <img src="images/welc3.svg" alt="board">
+            </div>
+            <div class="fs-18 fw-medium" style="min-height: 80px;">Только практикующие преподаватели</div>
+          </div>
+          <div class="col-6 col-md d-flex flex-column justify-content-between">
+            <div>
+              <img src="images/welc4.svg" alt="person">
+            </div>
+            <div class="fs-18 fw-medium" style="min-height: 80px;">Сопровождение на всех этапах. От начала обучения до трудоустройства</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- form owl -->
+    <div class="container d-flex p-0 box-gradient align-items-center justify-content-around mt-140 form-owl-container" style="background-color: #fff; border-radius: 20px; min-height: 336px;">
+      <div class="d-flex owl-box">
+        <div style="max-width: 277px;">
+          <img src="images/owl.svg" alt="owl" class="show-before-phone" style="width: 100%; height: 100%; object-fit: contain;">
+          <img src="images/owl-phone.svg" class="hidden" alt="owl" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="message-container d-flex flex-column justify-content-center">
+          <div class="fs-4 fw-semibold mb-2 ms-5">Помочь с выбором?</div>
+          <div class="fw-medium fs-6 ms-5" style="max-width: 353px;">Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения.</div>
+        </div>
+      </div>
+      <form class="was-validated" style="min-width: 440px;" id="myForm">
+        <div class="d-flex flex-column mb-3 gap-20">
+          <input type="text" class="form-check-input m-0 w-100" style="max-width: 440px;" id="name" name="name" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+          <div class="d-flex gap-20">
+            <input type="tel" class="form-check-input m-0 w-100" style="max-width: 210px;" id="tel" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+            <input type="email" class="form-check-input m-0 w-100" style="max-width: 210px;" id="email" name="email" required placeholder="Ваш e-mail">
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-20">
+          <div class="text-form" style="line-height: 14px; color: #4F4F4F; font-size: 10px; max-width: 210px;">Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформой</div>
+          <button type="submit" class="btn btn-custom btn-custom-orange fs-14 fw-bold">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer class="mt-140" style="background-color: #00093C; color: #fff;">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex flex-column" style="gap: 15px;">
+          <div>
+            <img src="images/logo-light.svg" class="show-before-phone" alt="logo">
+          </div>
+          <div class="fs-18 fw-semibold">8 800 950-33-98 </div>
+          <div class="fs-14 fw-medium">г. Москва, ул. Ленина, д. 50</div>
+          <div class="fs-14 fw-medium">info@hodfutureacademy.ru</div>
+          <div class="d-flex gap-20">
+            <a href="#">
+              <img src="images/vk.svg" alt="vk">
+            </a>
+            <a href="#">
+              <img src="images/inst.svg" alt="instagram">
+            </a>
+            <a href="#">
+              <img src="images/facebook.svg" alt="facebook">
+            </a>
+            <a href="#">
+              <img src="images/youtube.svg" alt="youtube">
+            </a>
+          </div>
+          <div class="fs-12" style="color: #BDBDBD;">© ХОД, Future Academy</div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Детям</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Робототехника</a>
+            <a href="#" class="fs-14">Создание игр</a>
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">Мультимедиа</a>
+            <a href="#" class="fs-14">Блогинг</a>
+            <a href="#" class="fs-14">Шахматы</a>
+            <a href="#" class="fs-14">Soft skills</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Подросткам</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Web-разработка</a>
+            <a href="#" class="fs-14">Прикладное программирование</a>
+            <a href="#" class="fs-14">Графическое моделирование</a>
+            <a href="#" class="fs-14">Game Development</a>
+            <a href="#" class="fs-14">Soft skills</a>
+            <a href="#" class="fs-14">Разработчик мобильных приложений</a>
+            <a href="#" class="fs-14">Блогинг</a>
+            <a href="#" class="fs-14">Создание игр</a>
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">Мультимедиа</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Взрослым</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">IOS-разработчик</a>
+            <a href="#" class="fs-14">Python–разработчик</a>
+            <a href="#" class="fs-14">Java-разработчик</a>
+            <a href="#" class="fs-14">Интернет Маркетинг</a>
+            <a href="#" class="fs-14">Тестировщик ПО</a>
+            <a href="#" class="fs-14">Графический Дизайн</a>
+            <a href="#" class="fs-14">Разработка ПО</a>
+            <a href="#" class="fs-14">Разработчик игр на Unity</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Информация</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Мероприятия</a>
+            <a href="#" class="fs-14">Об академии</a>
+            <a href="#" class="fs-14">Контакты</a>
+            <a href="#" class="fs-14">Карьера</a>
+            <a href="#" class="fs-14">База знаний</a>
+            <a href="#" class="fs-14">Новости</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Подключение jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <!-- Подключение скриптов Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <script>
+
+    $(document).ready(function() {
+      var $carousel = $('.owl-carousel');
+      var $progressBar = $('.progress-bar');
+      
+      $carousel.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        // autoWidth: false,
+        items: 7,
+        responsive: {
+          1440: {
+            items: 5
+          },
+          1024: {
+            items: 3
+          },
+          768: {
+            items: 2
+          },
+          425: {
+            items: 1
+          },
+          375: {
+            items: 1
+          },
+          320: {
+            items: 1
+          }
+        },
+        onTranslated: updateProgressBar
+      });
+
+      // Функции для стрелок
+      $('.carousel-prev').click(function() {
+        $carousel.trigger('prev.owl.carousel');
+      });
+
+      $('.carousel-next').click(function() {
+        $carousel.trigger('next.owl.carousel');
+      });
+
+      function updateProgressBar(event) {
+        var items = event.item.count;  // Всего элементов
+        var visibleItems = event.page.size;  // Количество видимых элементов на экране
+        var index = event.item.index;  // Текущий индекс (учитывайте, что индексация начинается с 0)
+        
+        // Рассчитываем прогресс, учитывая количество видимых элементов
+        var progressWidth = ((index + 1) / 6) * 100 - 60;
+
+        // Ограничим значение от 0 до 100, чтобы не было выхода за пределы
+        progressWidth = Math.min(Math.max(progressWidth, 0), 100);
+
+        // Применяем ширину к полоске прогресса
+        $('.progress-bar').css('width', progressWidth + '%');
+      }
+
+    });
+
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      // После успешной отправки показать сообщение
+      alert("Форма успешно отправлена!");
+    });
+
+  </script>
+</body>
+</html>

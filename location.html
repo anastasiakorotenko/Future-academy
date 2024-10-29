@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Academy</title>
+  <link rel="icon" href="images/icon.ico">
+  <link rel="icon" type="image/svg+xml" href="images/icon.svg">
+  <link rel="apple-touch-icon" href="images/icon.svg">
+  <link rel="stylesheet" href="bootstrap.css"> 
+  <style>
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Regular.ttf");
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Medium.ttf");
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Bold.ttf");
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Semibold.ttf");
+      font-weight: 600;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: "Montserrat";
+      src: url("fonts/Montserrat-Thin.ttf");
+      font-weight: 100;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "Montserrat";
+      background-color: #F6F7F9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="container-fuild">
+      <nav class="navbar d-flex flex-column navbar-expand-lg p-0">
+        <div class="d-flex navbar-nav-new justify-content-between" style="padding: 5px 10px; height: 60px; background-color: #00093C;">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-light.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon" style="background-image: url('images/burger-light.svg');"></span>
+          </button>
+        </div>
+        <!-- hidden nav -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex justify-content-between">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo-light.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+            </a>
+            <button type="button" class="btn-close p-0" data-bs-dismiss="offcanvas" aria-label="Закрыть">
+              <img src="images/burger-close-light.svg" alt="cross" style="width: 100%; height: 100%; object-fit: contain;">
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="programs.html">
+                    <img src="images/all-courses.svg" alt="menu">
+                    <div>Все курсы</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Мероприятия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">Базы знаний</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="career.html">Карьера</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="#">
+                  <img src="images/location.svg" alt="location">
+                  <div>Контакты</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#">8 800 950-33-98 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-2 align-items-center fs-14 fw-medium underline-hover" aria-current="page" href="registration.html" target="_blank">
+                  <img src="images/person.svg" alt="person">
+                  <div>Войти</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- nav -->
+        <div class="collapse navbar-collapse nav-custom" id="navbarNav" style="background-color: #00093C;">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-light.svg" alt="logo" style="width: 100%; height: 100%; object-fit: contain;">
+          </a>
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="programs.html">
+                <img src="images/all-courses-white.svg" alt="menu">
+                <div style="color: #fff;">Все курсы</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#" style="color: #fff;">Мероприятия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#" style="color: #fff;">Базы знаний</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="career.html" style="color: #fff;">Карьера</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="#" style="color: #fff;">
+                <img src="images/location-white.svg" alt="location">
+                <div>Контакты</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex fs-14 fw-medium underline-hover" aria-current="page" href="#"  style="color: #fff;">8 800 950-33-98 </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center fs-14 fw-medium underline-hover gap-2" aria-current="page" href="registration.html" target="_blank" style="color: #fff;">
+                <img src="images/person-white.svg" alt="person">
+                <div>Войти</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- mini nav -->
+    <div class="container p-0 show-before-phone">
+      <div class="d-flex align-items-center gap-2" style="margin: 25px 0;">
+        <a class="nav-link" href="index.html" class="fs-12" style="color: #828282;">Главная</a>
+        <div class="d-flex align-items-center">
+          <img src="images/arrow-grey.svg" alt="arrow">
+        </div>
+        <a class="nav-link" href="#" class="fs-12" style="color: #828282;">Контакты</a>
+      </div>
+    </div>
+    <div class="container fs-36 fw-bold p-0 contacts-letter">Контакты</div>
+    <!-- contacts -->
+    <div class="container p-0 d-flex justify-content-between contacts-container">
+      <div class="d-flex flex-column gap-40">
+        <div class="d-flex gap-2">
+          <img src="images/phone.svg" alt="phone">
+          <div class="fw-semibold fs-18">8 800 950-33-98 </div>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="images/email.svg" alt="email">
+          <div class="fs-14 fw-medium">info@hodfutureacademy.ru</div>
+        </div>
+        <div class="d-flex gap-2">
+          <img src="images/location-colorful.svg" alt="location">
+          <div class="fs-14 fw-medium">г. Москва, ул. Ленина, д. 50</div>
+        </div>
+        <div class="d-flex gap-20">
+          <a href="#">
+            <img src="images/vk-color.svg" alt="vk">
+          </a>
+          <a href="#">
+            <img src="images/inst-color.svg" alt="instagram">
+          </a>
+          <a href="#">
+            <img src="images/fb-color.svg" alt="facebook">
+          </a>
+          <a href="#">
+            <img src="images/youtube-color.svg" alt="youtube">
+          </a>
+          <a href="#">
+            <img src="images/tg-color.svg" alt="telegram">
+          </a>
+        </div>
+        <a href="#">
+          <img src="images/dzen.svg" alt="dzen">
+        </a>
+      </div>
+      <div>
+        <img src="images/map.png" class="show-before-phone" alt="map" style="max-width: 882px; width: 100%; height: 100%; object-fit: contain;">
+        <img src="images/map-phone.svg" class="hidden" alt="map" style="width: 100%; height: 100%; object-fit: contain;">
+      </div>
+    </div>
+    <!-- form owl -->
+    <div class="container d-flex p-0 box-gradient align-items-center justify-content-around mt-140 form-owl-container" style="background-color: #fff; border-radius: 20px; min-height: 336px;">
+      <div class="d-flex owl-box">
+        <div style="max-width: 277px;">
+          <img src="images/owl.svg" alt="owl" class="show-before-phone" style="width: 100%; height: 100%; object-fit: contain;">
+          <img src="images/owl-phone.svg" class="hidden" alt="owl" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <div class="message-container d-flex flex-column justify-content-center">
+          <div class="fs-4 fw-semibold mb-2 ms-5">Помочь с выбором?</div>
+          <div class="fw-medium fs-6 ms-5" style="max-width: 353px;">Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения.</div>
+        </div>
+      </div>
+      <form class="was-validated" style="min-width: 440px;" id="myForm">
+        <div class="d-flex flex-column mb-3 gap-20">
+          <input type="text" class="form-check-input m-0 w-100" style="max-width: 440px;" id="name" name="name" required placeholder="Ваше имя" aria-label="Username" aria-describedby="text"/>
+          <div class="d-flex gap-20">
+            <input type="tel" class="form-check-input m-0 w-100" style="max-width: 210px;" id="tel" name="tel" required placeholder="Ваш телефон" aria-label="tel" aria-describedby="tel"/>
+            <input type="email" class="form-check-input m-0 w-100" style="max-width: 210px;" id="email" name="email" required placeholder="Ваш e-mail">
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-20">
+          <div class="text-form" style="line-height: 14px; color: #4F4F4F; font-size: 10px; max-width: 210px;">Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования Платформой</div>
+          <button type="submit" class="btn btn-custom btn-custom-orange fs-14 fw-bold">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <footer class="mt-140" style="background-color: #00093C; color: #fff;">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex flex-column" style="gap: 15px;">
+          <div>
+            <img src="images/logo-light.svg" class="show-before-phone" alt="logo">
+          </div>
+          <div class="fs-18 fw-semibold">8 800 950-33-98 </div>
+          <div class="fs-14 fw-medium">г. Москва, ул. Ленина, д. 50</div>
+          <div class="fs-14 fw-medium">info@hodfutureacademy.ru</div>
+          <div class="d-flex gap-20">
+            <a href="#">
+              <img src="images/vk.svg" alt="vk">
+            </a>
+            <a href="#">
+              <img src="images/inst.svg" alt="instagram">
+            </a>
+            <a href="#">
+              <img src="images/facebook.svg" alt="facebook">
+            </a>
+            <a href="#">
+              <img src="images/youtube.svg" alt="youtube">
+            </a>
+          </div>
+          <div class="fs-12" style="color: #BDBDBD;">© ХОД, Future Academy</div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Детям</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Робототехника</a>
+            <a href="#" class="fs-14">Создание игр</a>
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">Мультимедиа</a>
+            <a href="#" class="fs-14">Блогинг</a>
+            <a href="#" class="fs-14">Шахматы</a>
+            <a href="#" class="fs-14">Soft skills</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Подросткам</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Web-разработка</a>
+            <a href="#" class="fs-14">Прикладное программирование</a>
+            <a href="#" class="fs-14">Графическое моделирование</a>
+            <a href="#" class="fs-14">Game Development</a>
+            <a href="#" class="fs-14">Soft skills</a>
+            <a href="#" class="fs-14">Разработчик мобильных приложений</a>
+            <a href="#" class="fs-14">Блогинг</a>
+            <a href="#" class="fs-14">Создание игр</a>
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">Мультимедиа</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Взрослым</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Программирование</a>
+            <a href="#" class="fs-14">IOS-разработчик</a>
+            <a href="#" class="fs-14">Python–разработчик</a>
+            <a href="#" class="fs-14">Java-разработчик</a>
+            <a href="#" class="fs-14">Интернет Маркетинг</a>
+            <a href="#" class="fs-14">Тестировщик ПО</a>
+            <a href="#" class="fs-14">Графический Дизайн</a>
+            <a href="#" class="fs-14">Разработка ПО</a>
+            <a href="#" class="fs-14">Разработчик игр на Unity</a>
+          </div>
+        </div>
+        <div class="d-flex flex-column show-before-phone" style="gap: 20px;">
+          <div class="fw-bold">Информация</div>
+          <div class="d-flex flex-column" style="gap: 15px;">
+            <a href="#" class="fs-14">Мероприятия</a>
+            <a href="#" class="fs-14">Об академии</a>
+            <a href="#" class="fs-14">Контакты</a>
+            <a href="#" class="fs-14">Карьера</a>
+            <a href="#" class="fs-14">База знаний</a>
+            <a href="#" class="fs-14">Новости</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      // После успешной отправки показать сообщение
+      alert("Форма успешно отправлена!");
+    });
+  </script>
+</body>
+</html>
