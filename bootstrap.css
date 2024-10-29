@@ -12427,8 +12427,9 @@ footer .container {
   .navbar-nav {
     flex-direction: column;
     gap: 20px;
-    padding: 30px 0 30px 10px;
+    padding: 30px 0 0 10px;
     height: 100vh;
+    width: max-content;
   }
 
   .container {max-width: 720px;}
@@ -12572,7 +12573,10 @@ footer .container {
     max-width: 100% !important;
   }
 
-  footer .container {margin: 0 0 auto 10px !important;}
+  footer .container {
+    padding: 50px 0 50px 10px !important;
+    margin: 0 !important;
+  }
   footer .fs-18 {font-size: 18px !important;}
   footer .fs-14 {font-size: 14px !important;}
   footer .fs-12 {font-size: 12px !important;}
